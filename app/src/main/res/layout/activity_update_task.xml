@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F7F9"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingTop="25dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="20dp">
+
+            <IE.walkmate.AM3Dementia.custom_control.ToggleButtonGroupTableLayout
+                android:id="@+id/radioGroupCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+
+                <TableRow android:padding="5dp">
+
+                    <RadioButton
+                        android:id="@+id/radioPersonal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_button_background"
+                        android:button="@android:color/transparent"
+                        android:clickable="true"
+                        android:drawableTop="@drawable/yogacat_icon"
+                        android:fontFamily="@string/font_family_condensed"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Yoga" />
+
+
+                    <RadioButton
+                        android:id="@+id/radioHouseKeeping"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_button_background"
+                        android:button="@android:color/transparent"
+                        android:clickable="true"
+                        android:drawableTop="@drawable/othercat_icon"
+                        android:fontFamily="@string/font_family_condensed"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Other" />
+                </TableRow>
+
+
+                <TableRow android:padding="5dp">
+
+                    <RadioButton
+                        android:id="@+id/radioHealth"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_button_background"
+                        android:button="@android:color/transparent"
+                        android:clickable="true"
+                        android:drawableTop="@drawable/chairexercat_icon"
+                        android:fontFamily="@string/font_family_condensed"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Chair Based Exercises" />
+
+
+                    <RadioButton
+                        android:id="@+id/radioSocialLersure"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_button_background"
+                        android:button="@android:color/transparent"
+                        android:clickable="true"
+                        android:drawableTop="@drawable/taichicat_icon"
+                        android:fontFamily="@string/font_family_condensed"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Tai-Chi" />
+
+                </TableRow>
+
+
+            </IE.walkmate.AM3Dementia.custom_control.ToggleButtonGroupTableLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@string/font_family_condensed"
+                android:text="Select Sub Category"
+                android:textColor="#3F51B5"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSubCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button_background"
+                    android:button="@android:color/transparent"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/yoga_1"
+
+                    android:fontFamily="@string/font_family_condensed"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="1" />
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button_background"
+                    android:button="@android:color/transparent"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/yoga_2"
+                    android:fontFamily="@string/font_family_condensed"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="3" />
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button_background"
+                    android:button="@android:color/transparent"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/yoga_3"
+                    android:fontFamily="@string/font_family_condensed"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="2" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@string/font_family_condensed"
+                android:text="Benefits"
+                android:textColor="#3F51B5"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spinner_task_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_indivitidual_edittext"
+                android:prompt="@string/spinner_prompt"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@string/font_family_condensed"
+                android:text="Reminder"
+                android:textColor="#3F51B5"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnaudio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_indivitidual_edittext"
+                android:drawableLeft="@drawable/ic_mic"
+                android:drawablePadding="10dp"
+                android:fontFamily="@string/font_family_condensed"
+                android:gravity="left|center_vertical"
+                android:hint="Record Sound"
+                android:onClick="recordAudio"
+                android:paddingLeft="15dp"
+                android:textAllCaps="false"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@string/font_family_condensed"
+                android:text="Repeat"
+                android:textColor="#3F51B5"
+                android:textSize="15sp" />
+
+            <IE.walkmate.AM3Dementia.custom_control.CustomBackgroundTextInputLayout
+                android:id="@+id/textinput_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:hintTextAppearance="@style/hint_appearance_register">
+
+                <RadioGroup
+                    android:id="@+id/radioGroupRepeatType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <RadioButton
+                        android:id="@+id/radioDaily"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_button_background"
+                        android:button="@android:color/transparent"
+                        android:clickable="true"
+                        android:drawableLeft="@drawable/daily"
+                        android:fontFamily="@string/font_family_condensed"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:padding="5dp"
+                        android:text="Daily"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioWeekly"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_button_background"
+                        android:button="@android:color/transparent"
+                        android:clickable="true"
+                        android:drawableLeft="@drawable/weekly"
+                        android:fontFamily="@string/font_family_condensed"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:padding="5dp"
+                        android:text="Weekly"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioMonthly"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_button_background"
+                        android:button="@android:color/transparent"
+                        android:clickable="true"
+                        android:drawableLeft="@drawable/monthly"
+                        android:fontFamily="@string/font_family_condensed"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:padding="5dp"
+                        android:text="Monthly"
+                        android:textSize="14sp" />
+
+
+                </RadioGroup>
+
+
+            </IE.walkmate.AM3Dementia.custom_control.CustomBackgroundTextInputLayout>
+
+
+            <TextView
+                android:id="@+id/lblDayOfWeek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@string/font_family_condensed"
+                android:text="Day Of Week"
+                android:textColor="#3F51B5"
+                android:textSize="15sp" />
+
+            <IE.walkmate.AM3Dementia.custom_control.ToggleButtonGroupTableLayout
+                android:id="@+id/radioGroupDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+
+                <TableRow android:padding="5dp">
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#00574B"
+                        android:text="Mon" />
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#00574B"
+                        android:text="Tue" />
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#00574B"
+                        android:text="Wed" />
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#00574B"
+                        android:text="Thu" />
+
+                </TableRow>
+
+                <TableRow
+                    android:padding="5dp"
+                    android:weightSum="4">
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#00574B"
+                        android:text="Fri" />
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#00574B"
+                        android:text="Sat" />
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#00574B"
+                        android:text="Sun" />
+
+                </TableRow>
+
+
+            </IE.walkmate.AM3Dementia.custom_control.ToggleButtonGroupTableLayout>
+
+
+            <TextView
+                android:id="@+id/lblDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@string/font_family_condensed"
+                android:text="Date"
+                android:textColor="#3F51B5"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvTaskDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_indivitidual_edittext"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_date"
+                android:drawablePadding="10dp"
+                android:fontFamily="@string/font_family_condensed"
+                android:gravity="left|center_vertical"
+                android:onClick="setDate"
+                android:padding="15dp"
+                android:paddingLeft="15dp"
+                android:text="24/12/2009"
+                android:textSize="17sp" />
+
+
+            <LinearLayout
+                android:id="@+id/LinearTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@string/font_family_condensed"
+                    android:text="Time"
+                    android:textColor="#3F51B5"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/tvTaskTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/custom_indivitidual_edittext"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/ic_watch"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@string/font_family_condensed"
+                    android:gravity="left|center_vertical"
+                    android:padding="15dp"
+                    android:paddingLeft="15dp"
+                    android:text="09:30"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@string/font_family_condensed"
+                android:text="Notes"
+                android:textColor="#3F51B5"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtnotes"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:imeOptions="actionDone"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_background_note"
+                android:fontFamily="@string/font_family_condensed"
+                android:gravity="top|left"
+                android:hint="Add your comments"
+                android:inputType="text"
+                android:lines="5"
+                android:maxLines="6"
+                android:minLines="4"
+                android:padding="10dp"
+                android:scrollbars="vertical"
+                android:textAllCaps="false" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_button_save_add_task"
+                android:fontFamily="@string/font_family_condensed"
+                android:onClick="SaveTask"
+                android:text="Save"
+                android:textColor="#FFF" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
+

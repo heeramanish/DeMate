@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <TextView
+        android:id="@+id/tvRecordStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="30dp"
+        android:text="Press To Record Audio"
+        android:textColor="#F44336"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center">
+
+
+        <ImageButton
+            android:id="@+id/btnPlayIcon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/background_imagerecord"
+            android:src="@drawable/ic_mic_play1" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageButton
+                android:id="@+id/btnRecordIcon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/background_imagerecord"
+                android:clickable="true"
+                android:src="@drawable/ic_mic_record1" />
+
+            <ImageButton
+                android:id="@+id/btnStopRecordIcon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/background_imagestoprecord"
+                android:clickable="true"
+                android:src="@drawable/ic_mic_stop1"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/btnSaveIcon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/background_imagerecord"
+            android:clickable="true"
+            android:src="@drawable/ic_mic_save1" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

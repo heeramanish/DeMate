@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MissionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+
+                android:text="Task"
+                android:textColor="#E91E63"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/imgRepeatType"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_account_circle_black" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@string/font_family_condensed"
+            android:text="Name"
+            android:textColor="#3F51B5"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvTaskName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Going to School"
+            android:textColor="#03A9F4"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@string/font_family_condensed"
+            android:text="Note"
+            android:textColor="#3F51B5"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvTaskNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Take Care Friend like he want to understand"
+            android:textColor="#03A9F4"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lblDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@string/font_family_condensed"
+            android:text="Date"
+            android:textColor="#3F51B5"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvTaskDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="23/03/2019"
+            android:textColor="#03A9F4"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@string/font_family_condensed"
+            android:text="Time"
+            android:textColor="#3F51B5"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvTaskTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="09:30"
+            android:textColor="#03A9F4"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lblAudio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@string/font_family_condensed"
+            android:text="Audio"
+            android:textColor="#3F51B5"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnaudio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_indivitidual_edittext"
+            android:drawableLeft="@drawable/ic_mic"
+            android:drawablePadding="10dp"
+            android:fontFamily="@string/font_family_condensed"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="15dp"
+            android:text="Press to Listen"
+            android:textAllCaps="false"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+
+</ScrollView>

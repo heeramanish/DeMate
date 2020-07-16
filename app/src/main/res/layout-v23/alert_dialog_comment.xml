@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blank_notebook"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <Spinner
+        android:id="@+id/aSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:entries="@array/Spinner_items"/>
+
+    <TextView
+        android:id="@+id/alertDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Express your feelings"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/alertDialogComment"
+        android:layout_width="match_parent"
+        android:layout_height="385dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/comment_hint"
+        android:inputType="textMultiLine"
+        android:textSize="20sp" />
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/voice_input"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_alignRight="@+id/alertDialogComment"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:background="@drawable/ic_mic"-->
+<!--        android:paddingTop="12dp"-->
+<!--        android:paddingEnd="10dp" />-->
+
+    <Button
+        android:id="@+id/alertDialogBoxOK"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="@string/alert_dialog_box_ok"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/alertDialogBoxCANCEL"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:baselineAligned="false"
+        android:text="@string/alert_dialog_box_cancel"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+</LinearLayout>

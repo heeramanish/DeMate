@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">De Mate</string>
+    <string name="spinner_prompt">Select Task</string>
+    <string name="spinner_prompt_education">Select Education</string>
+    <string name="spinner_prompt_category">Select Category</string>
+    <string name="register_note">Are you diagnosed with dementia or any other memory loss condition?</string>
+
+    <string name="hintname">Name</string>
+    <string name="hintemail">Email</string>
+    <string name="hintpassword">Password</string>
+    <string name="hintNewpassword">New Password</string>
+    <string name="hintCpassword">Confirm Password</string>
+    <string name="textlogin">Login</string>
+    <string name="textregister">Register</string>
+
+    <string name="texterrorname">Enter Full Name</string>
+    <string name="texterroremail">Enter valid email</string>
+    <string name="texterrorpassword">Enter Password</string>
+    <string name="texterrorage">Enter Age</string>
+
+    <string name="successmessage">Registration Successfully! Now,You can Login</string>
+    <string name="successmessage_update">Updated Successfully</string>
+
+    <string name="textnotmember">No Account yet? Create one</string>
+    <string name="textalreadymember">Already member? Login</string>
+    <string name="erroremailexist">Email Already Exist</string>
+    <string name="errorpasswordmatch">Password does not matches</string>
+    <string name="erroralidemailpassword">Wrong Email or Password</string>
+
+    <string name="no_exist_email">Email is not Exist</string>
+    <string name="suddenlyError">Some thing Happens! Please check Again!</string>
+
+    <string name="text_confirm">Confirm</string>
+    <string name="text_forgot_password">Forgot Password?</string>
+    <string name="text_reset">Reset</string>
+    <string name="updatesuccess">Update Password Successfully</string>
+    <string name="confirm_register">I agree that my registration information are collected, stored, and analyzed anonymously for research purposes</string>
+
+    <string name="imgprofileedit">Edit</string>
+    <string name="termandCondition">Translations of words in this app are based on the understanding that the translation is based carefully on the original English language version published by its prospective authors.  The quality of the translation lies with the translator.  However, as a way of checking the quality native speakers undertook back-translation.  Users that use a translated version of this application and discover errors are encouraged to contact us at trungthaithanh170496@gmail.com</string>
+    <string name="disclaimer"> </string>
+    <string name="textview">TextView</string>
+    <string name="video_titiles">Video_Titiles</string>
+
+
+
+    <!-- GENERAL STRINGS -->
+
+    <string name="toast_swipe_to_change">Swipe left and right to change between happiness!</string>
+    <string name="mood_history_button">Mood History Button</string>
+    <string name="custom_note_button">Custom Note Button</string>
+    <string name="smiley_face_button">Smiley Face Button</string>
+    <string name="smiley_happy_face_button" />
+    <string name="smiley_disappointed_face_button" />
+    <string name="smiley_normal_face_button" />
+    <string name="smiley_sad_face_button" />
+    <string name="smiley_super_happy_face_button" />
+
+    <string-array name="Spinner_items">
+        <item>Yoga</item>
+        <item>Chair Based Exercises</item>
+        <item>Tai Chi</item>
+        <item>Brain Exercises</item>
+    </string-array>
+
+    <!-- ALERT DIALOG BOX -->
+    <string name="alert_dialog_box_title">Title of Alert Dialog</string>
+    <string name="alert_dialog_box_text">Text of Alert Dialog</string>
+    <string name="alert_dialog_box_ok">SUBMIT</string>
+    <string name="alert_dialog_box_cancel">CANCEL</string>
+    <string name="comment_hint">Write here!</string>
+    <string name="speech_prompt">Say something</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+    <string name="tap_on_mic">Tap on mic to speak</string>
+    <string name="alertDialogTitle">ADD A COMMENT!</string>
+
+    <!-- ALERT DIALOG ONCLICK BUTTONS -->
+    <string name="quotation_marks">"\""</string>
+    <string name="has_been_saved">"\""\ "has been saved</string>
+    <string name="fill_empty_space">Please, fill the empty space</string>
+    <string name="no_string_added">No comment was saved</string>
+
+    <!-- ONCLICK FACES' TOASTS -->
+    <string name="day_set_superhappy">Day state set to SUPER HAPPY :)) !!</string>
+    <string name="day_set_happy">Day state set to HAPPY :)</string>
+    <string name="day_set_normal">Day state set to NORMAL</string>
+    <string name="day_set_disappointed">Day state set to DISAPPOINTED :(</string>
+    <string name="day_set_sad">Day state set to SAD… :((</string>
+
+    <!-- ONCLICK HISTORY BUTTON TOAST -->
+    <string name="mood_history_toast">MOOD HISTORY</string>
+
+    <!-- MOOD HISTORY DELETE DIALOG -->
+    <string name="delete_history_title">Deleting all saved History</string>
+    <string name="delete_history_message">Are you sure you want to delete complete history?</string>
+    <string name="delete_history_positive_button">Yes, I am sure</string>
+    <string name="delete_history_negative_button">No</string>
+    <string name="delete_history_toast">History has been deleted</string>
+
+    <!-- MOOD HISTORY PIE CHART BUTTON -->
+    <string name="no_data_no_pie_chart">There is no data to show in a Pie Chart</string>
+    <string name="data_already_deleted">Data has been already deleted</string>
+
+    <!-- MOOD HISTORY BACK BUTTON -->
+    <string name="go_back_main_activity">Go back to Main Activity</string>
+
+    <!-- PIE CHART ACTIVITY BACK BUTTON -->
+    <string name="go_back_mood_history">Go back to Mood History</string>
+    <string name="title_pie_chart_activity">Mood Pie Chart</string>
+
+</resources>

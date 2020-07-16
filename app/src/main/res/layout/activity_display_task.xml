@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F7F9"
+    android:orientation="vertical"
+    tools:context=".activities.DisplayTaskActivity">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvFilterCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#FFF"
+            android:fontFamily="@string/font_family_condensed"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text=""
+            android:textColor="#3F51B5"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <IE.walkmate.AM3Dementia.custom_control.ToggleButtonGroupTableLayout
+            android:id="@+id/radioGroupCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvFilterCategory"
+            android:background="#FFF"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:padding="5dp">
+
+                <RadioButton
+                    android:id="@+id/radioPersonal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button_background"
+                    android:button="@android:color/transparent"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/yogacat_icon"
+                    android:fontFamily="@string/font_family_condensed"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Yoga" />
+
+
+                <RadioButton
+                    android:id="@+id/radioHouseKeeping"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button_background"
+                    android:button="@android:color/transparent"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/othercat_icon"
+                    android:fontFamily="@string/font_family_condensed"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Brain Exercise" />
+            </TableRow>
+
+            <TableRow android:padding="5dp">
+
+
+                <RadioButton
+                    android:id="@+id/radioHealth"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button_background"
+                    android:button="@android:color/transparent"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/chairexercat_icon"
+                    android:fontFamily="@string/font_family_condensed"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Chair Based Exercises" />
+
+                <RadioButton
+                    android:id="@+id/radioSocialLersure"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button_background"
+                    android:button="@android:color/transparent"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/taichicat_icon"
+                    android:fontFamily="@string/font_family_condensed"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Tai-Chi"/>
+
+            </TableRow>
+
+
+        </IE.walkmate.AM3Dementia.custom_control.ToggleButtonGroupTableLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/layoutFilter"
+            android:layout_below="@id/radioGroupCategory"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F4F4F4"
+                android:clipToPadding="true" />
+
+            <TextView
+                android:id="@+id/tvNoRecord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="No Tasks is Added"
+                android:textColor="#FF5722"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layoutFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#FFF"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@string/font_family_condensed"
+                android:gravity="center"
+                android:text="Filter By"
+                android:textColor="#0A0A0A"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupRepeatType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:weightSum="3">
+
+                <RadioButton
+                    android:id="@+id/radioDaily"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button_background"
+                    android:button="@android:color/transparent"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/daily"
+                    android:fontFamily="@string/font_family_condensed"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:paddingTop="2dp"
+                    android:text="Daily"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:id="@+id/radioWeekly"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button_background"
+                    android:button="@android:color/transparent"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/weekly"
+                    android:fontFamily="@string/font_family_condensed"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:paddingTop="2dp"
+                    android:text="Weekly"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:id="@+id/radioMonthly"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button_background"
+                    android:button="@android:color/transparent"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/monthly"
+                    android:fontFamily="@string/font_family_condensed"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:paddingTop="2dp"
+                    android:text="Monthly"
+                    android:textSize="14dp" />
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

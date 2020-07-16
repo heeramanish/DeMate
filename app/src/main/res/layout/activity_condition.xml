@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+<!--
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/font_family_condensed"
+            android:text="Disclaimer"
+            android:textColor="#3F51B5"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tvcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@string/font_family_condensed"
+            android:text="Select Sub Category"
+            android:textSize="18sp" />
+
+        <Button
+            android:onClick="goback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/custom_button_save_add_task"
+            android:fontFamily="@string/font_family_condensed"
+            android:text="Ok"
+            android:textColor="#FFF" />
+        -->
+
+
+
+</LinearLayout>

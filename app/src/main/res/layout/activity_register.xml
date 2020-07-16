@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.RegisterActivity">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingTop="25dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="20dp">
+
+            <com.github.abdularis.civ.CircleImageView
+                android:clickable="false"
+                android:id="@+id/imgprofilepicture"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_account_circle_black"
+                app:strokeColor="#490C0C"
+                app:strokeWidth="2dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvlinkeditimg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/imgprofileedit"
+                android:textColor="@color/textcolorlink"
+                android:textSize="16dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@string/font_family_condensed"
+                android:text="Email"
+                android:textColor="#3F51B5"
+                android:textSize="15sp" />
+
+            <IE.walkmate.AM3Dementia.custom_control.CustomBackgroundTextInputLayout
+                android:id="@+id/textinput_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:hintTextAppearance="@style/hint_appearance_register">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edit_text"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/hintemail"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:textColorHint="@color/textcolor">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </IE.walkmate.AM3Dementia.custom_control.CustomBackgroundTextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/linearPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@string/font_family_condensed"
+                    android:text="Password"
+                    android:textColor="#3F51B5"
+                    android:textSize="15sp" />
+
+                <IE.walkmate.AM3Dementia.custom_control.CustomBackgroundTextInputLayout
+                    android:id="@+id/textinput_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:hintTextAppearance="@style/hint_appearance_register">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_edit_text"
+                        android:drawableLeft="@drawable/ic_lock"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/hintpassword"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:padding="15dp"
+                        android:textColorHint="@color/textcolor" />
+                </IE.walkmate.AM3Dementia.custom_control.CustomBackgroundTextInputLayout>
+
+
+                <TextView
+                    android:id="@+id/tvCPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@string/font_family_condensed"
+                    android:text="Confirm Password"
+                    android:textColor="#3F51B5"
+                    android:textSize="15sp" />
+
+                <IE.walkmate.AM3Dementia.custom_control.CustomBackgroundTextInputLayout
+                    android:id="@+id/textinput_Cpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:hintTextAppearance="@style/hint_appearance_register">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_edit_text"
+                        android:drawableLeft="@drawable/repeat"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/hintCpassword"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:padding="15dp"
+                        android:textColorHint="@color/textcolor" />
+                </IE.walkmate.AM3Dementia.custom_control.CustomBackgroundTextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@string/font_family_condensed"
+                    android:text="Location"
+                    android:textColor="#3F51B5"
+                    android:textSize="15sp" />
+
+                <IE.walkmate.AM3Dementia.custom_control.CustomBackgroundTextInputLayout
+                    android:id="@+id/textinput_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:hintTextAppearance="@style/hint_appearance_register">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autotv_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_indivitidual_edittext"
+                        android:drawableLeft="@drawable/ic_flag"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@string/font_family_condensed"
+                        android:hint="Enter Country"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:padding="12dp"
+                        android:textAllCaps="false" />
+                </IE.walkmate.AM3Dementia.custom_control.CustomBackgroundTextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@string/font_family_condensed"
+                    android:text="Age"
+                    android:textColor="#3F51B5"
+                    android:textSize="15sp" />
+
+                <IE.walkmate.AM3Dementia.custom_control.CustomBackgroundTextInputLayout
+                    android:id="@+id/textinput_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:hintTextAppearance="@style/hint_appearance_register">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_edit_text"
+                        android:drawableLeft="@drawable/ic_age"
+                        android:drawablePadding="10dp"
+                        android:hint="Age"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:padding="15dp"
+                        android:textColorHint="@color/textcolor">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </IE.walkmate.AM3Dementia.custom_control.CustomBackgroundTextInputLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@string/font_family_condensed"
+                    android:text="Gender"
+                    android:textColor="#3F51B5"
+                    android:textSize="15sp" />
+
+                <IE.walkmate.AM3Dementia.custom_control.CustomBackgroundTextInputLayout
+                    android:id="@+id/textinput_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    app:hintTextAppearance="@style/hint_appearance_register">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <RadioButton
+                            android:id="@+id/radioMale"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/custom_button_background"
+                            android:button="@android:color/transparent"
+                            android:drawableTop="@drawable/ic_boy"
+                            android:fontFamily="@string/font_family_condensed"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Male" />
+
+                        <RadioButton
+                            android:id="@+id/radioFemale"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/custom_button_background"
+                            android:button="@android:color/transparent"
+                            android:drawableTop="@drawable/girl"
+                            android:fontFamily="@string/font_family_condensed"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Female" />
+
+                        <RadioButton
+                            android:id="@+id/radioOther"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/custom_button_background"
+                            android:button="@android:color/transparent"
+                            android:drawableTop="@drawable/ic_other_gender"
+                            android:fontFamily="@string/font_family_condensed"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Other" />
+                    </RadioGroup>
+
+                </IE.walkmate.AM3Dementia.custom_control.CustomBackgroundTextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@string/font_family_condensed"
+                    android:text="How Often You Exercise"
+                    android:textColor="#3F51B5"
+                    android:textSize="15sp" />
+
+                <IE.walkmate.AM3Dementia.custom_control.CustomBackgroundTextInputLayout
+                    android:id="@+id/textinput_education"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    app:hintTextAppearance="@style/hint_appearance_register">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupEducation"
+                        android:layout_width="match_parent"
+                        android:layout_height="111dp"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/custom_button_background"
+                            android:button="@android:color/transparent"
+                            android:drawableTop="@drawable/often"
+                            android:fontFamily="@string/font_family_condensed"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Regularly" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/custom_button_background"
+                            android:button="@android:color/transparent"
+                            android:drawableTop="@drawable/regular"
+                            android:fontFamily="@string/font_family_condensed"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Sometimes" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/custom_button_background"
+                            android:button="@android:color/transparent"
+                            android:drawableTop="@drawable/lazy"
+                            android:fontFamily="@string/font_family_condensed"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Never" />
+                    </RadioGroup>
+
+                </IE.walkmate.AM3Dementia.custom_control.CustomBackgroundTextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@string/font_family_condensed"
+                    android:text="@string/register_note"
+                    android:textSize="19sp" />
+
+                <IE.walkmate.AM3Dementia.custom_control.CustomBackgroundTextInputLayout
+                    android:id="@+id/textinput_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    app:hintTextAppearance="@style/hint_appearance_register">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupQuestion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/custom_button_background"
+                            android:button="@android:color/transparent"
+                            android:fontFamily="@string/font_family_condensed"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Yes" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/custom_button_background"
+                            android:button="@android:color/transparent"
+                            android:fontFamily="@string/font_family_condensed"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="No" />
+                    </RadioGroup>
+
+                </IE.walkmate.AM3Dementia.custom_control.CustomBackgroundTextInputLayout>
+
+                <IE.walkmate.AM3Dementia.custom_control.CustomBackgroundTextInputLayout
+                    android:id="@+id/textinput_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    app:hintTextAppearance="@style/hint_appearance_register">
+
+                    <CheckBox
+                        android:id="@+id/ckConfirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#00574B"
+                        android:fontFamily="@string/font_family_condensed"
+                        android:gravity="top"
+                        android:text="@string/confirm_register"
+                        android:textColor="#3D5CFA"
+                        android:textSize="17sp" />
+
+                </IE.walkmate.AM3Dementia.custom_control.CustomBackgroundTextInputLayout>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnsignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_button_save_add_task"
+                android:fontFamily="@string/font_family_condensed"
+                android:text="SIGN UP"
+                android:textColor="#FFF"
+                android:textSize="15sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnupdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_button_save_add_task"
+                android:fontFamily="@string/font_family_condensed"
+                android:text="Update"
+                android:textColor="#FFF"
+                android:textSize="15sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
