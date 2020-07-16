@@ -1,5 +1,5 @@
 # DeMate
-An Android application made on Android studio IDE. 
+An Android application developed on Android studio IDE. 
 # am3dementia
 
 
